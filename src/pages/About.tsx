@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { GraduationCap, Award, MapPin, Calendar, Users, Target, Building, Globe, Briefcase } from 'lucide-react';
+import { GraduationCap, Award, MapPin, Calendar, Users, Target, Building, Globe, Briefcase, Brain, BarChart3, AlertTriangle, Settings, TrendingUp, Database } from 'lucide-react';
 
 const About = () => {
   const education = [

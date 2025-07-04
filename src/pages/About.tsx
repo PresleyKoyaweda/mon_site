@@ -1,12 +1,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { GraduationCap, Award, MapPin, Calendar, Users, Target, Building, Globe } from 'lucide-react';
+import { GraduationCap, Award, MapPin, Calendar, Users, Target, Building, Globe, Briefcase } from 'lucide-react';
 
 const About = () => {
   const education = [
     {
       degree: 'M.Ing. Computer Engineering : Data Engineering and Analytics',
-      institution: 'Polytechnique de Montréal',
+      institution: 'Polytechnique Montréal',
       year: '2024-2025',
       location: 'Montréal, QC, Canada',
       description: 'Spécialisation en science des données, apprentissage automatique, NLP et MLOps',
@@ -18,7 +18,7 @@ const About = () => {
       institution: 'ISSEA',
       year: '2018-2020',
       location: 'Afrique Centrale',
-      description: 'Fondements en mathématiques appliquées, statistique inférentielle et modélisation prédictive',
+      description: 'Fondements solides en mathématiques appliquées, statistique inférentielle et modélisation prédictive',
       icon: '📊',
       color: 'purple'
     },
@@ -37,41 +37,56 @@ const About = () => {
     {
       company: 'Desjardins',
       role: 'Projets IA & MLOps',
-      description: 'Développement de solutions d\'intelligence artificielle et mise en place de pipelines MLOps dans l\'écosystème financier',
+      description: 'Développement et déploiement de solutions d\'intelligence artificielle dans l\'écosystème financier, avec mise en place de pipelines MLOps robustes',
       icon: <Building className="text-blue-600" size={24} />,
       color: 'blue'
     },
     {
       company: 'Maverick Analytik',
       role: 'Accompagnement PME',
-      description: 'Conception de solutions analytiques sur mesure pour optimiser les performances des petites et moyennes entreprises',
+      description: 'Conception de solutions analytiques sur mesure pour optimiser les performances et la croissance des petites et moyennes entreprises',
       icon: <Target className="text-green-600" size={24} />,
       color: 'green'
     },
     {
       company: 'African Parks Network',
       role: 'Projets environnement',
-      description: 'Analyse de données pour la conservation de la biodiversité et la protection des écosystèmes africains',
+      description: 'Analyse de données critiques pour la conservation de la biodiversité et la protection des écosystèmes africains',
       icon: <Globe className="text-purple-600" size={24} />,
       color: 'purple'
     }
   ];
 
-  const values = [
+  const specializations = [
     {
-      icon: <Target className="text-blue-600" size={32} />,
-      title: 'Innovation',
-      description: 'Recherche constante de solutions créatives pour transformer les données en valeur business'
+      icon: <Brain className="text-purple-600" size={32} />,
+      title: 'NLP/NLU',
+      description: 'Traitement du langage naturel et compréhension automatique'
     },
     {
-      icon: <Users className="text-green-600" size={32} />,
-      title: 'Impact',
-      description: 'Engagement vers des projets qui génèrent un impact mesurable et durable'
+      icon: <BarChart3 className="text-blue-600" size={32} />,
+      title: 'Visualisation Interactive',
+      description: 'Dashboards et interfaces utilisateur pour l\'exploration de données'
     },
     {
-      icon: <Award className="text-purple-600" size={32} />,
-      title: 'Excellence',
-      description: 'Combinaison de rigueur scientifique et de pragmatisme opérationnel'
+      icon: <AlertTriangle className="text-red-600" size={32} />,
+      title: 'Détection d\'Anomalies',
+      description: 'Surveillance intelligente et identification de patterns anormaux'
+    },
+    {
+      icon: <Settings className="text-green-600" size={32} />,
+      title: 'MLOps',
+      description: 'Orchestration et déploiement de modèles en production'
+    },
+    {
+      icon: <TrendingUp className="text-orange-600" size={32} />,
+      title: 'Systèmes de Recommandation',
+      description: 'Algorithmes personnalisés pour l\'optimisation des choix'
+    },
+    {
+      icon: <Database className="text-indigo-600" size={32} />,
+      title: 'Valorisation de la Donnée',
+      description: 'Transformation des données brutes en insights actionnables'
     }
   ];
 
@@ -91,7 +106,7 @@ const About = () => {
           </p>
         </motion.div>
 
-        {/* Bio Section */}
+        {/* Main Bio Section */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -100,27 +115,24 @@ const About = () => {
         >
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Mon Histoire</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">Mon Parcours</h2>
               <div className="space-y-4 text-gray-700 leading-relaxed text-lg">
                 <p>
-                  Passionné par la valorisation des données, l'intelligence artificielle et les technologies de rupture, 
-                  j'ai très tôt orienté mon parcours vers la science des données. De mes premières analyses statistiques 
-                  en Afrique centrale à la réalisation de projets stratégiques en Amérique du Nord, j'ai développé une 
-                  vision globale des enjeux data à travers différents contextes métier.
+                  Passionné par la valorisation des données, l'intelligence artificielle et les solutions 
+                  technologiques à impact, j'ai orienté mes études et mon parcours professionnel vers la 
+                  science des données appliquée. Mon cheminement m'a permis d'exploiter ces compétences 
+                  sur le terrain, à travers des projets à fort enjeu au sein d'organisations de renom 
+                  telles qu'African Parks Network, Maverick Analytik ou encore Desjardins.
                 </p>
                 <p>
-                  Fort d'environ 4 années d'expérience en tant qu'analyste de données et développeur BI, j'ai accompagné 
-                  des organisations aux missions variées. Chez African Parks Network, j'ai contribué à des projets de 
-                  conservation environnementale en analysant des données critiques pour la protection de la biodiversité. 
-                  Avec Maverick Analytik, j'ai développé des solutions analytiques sur mesure pour accompagner la croissance 
-                  des PME. Chez Desjardins, j'ai participé à la mise en place de solutions d'intelligence artificielle et 
-                  de pipelines MLOps dans l'écosystème financier.
+                  Avec plus de 4 années d'expérience dans l'analyse de données, la business intelligence 
+                  et la mise en production de modèles IA, j'ai développé une expertise solide en NLP/NLU, 
+                  visualisation interactive, détection d'anomalies, MLOps et systèmes de recommandation.
                 </p>
                 <p>
-                  Aujourd'hui, je me spécialise dans le développement de solutions d'IA sur mesure, en combinant des 
-                  compétences solides en NLP, déploiement de modèles ML, visualisation interactive et MLOps. Mon approche 
-                  allie rigueur scientifique et pragmatisme business, avec une sensibilité forte aux enjeux éthiques et 
-                  à l'impact social des technologies que je développe.
+                  Mes projets personnels, académiques et professionnels m'ont permis de passer de la 
+                  modélisation à l'orchestration complète de solutions IA end-to-end, dans des 
+                  environnements exigeants et concrets.
                 </p>
               </div>
             </div>
@@ -131,10 +143,10 @@ const About = () => {
             >
               <div className="w-full h-96 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center shadow-2xl">
                 <div className="text-white text-center">
-                  <GraduationCap size={80} className="mx-auto mb-4" />
+                  <Briefcase size={80} className="mx-auto mb-4" />
                   <div className="text-2xl font-bold">4+ années</div>
                   <div className="text-lg">d'expérience</div>
-                  <div className="text-sm mt-2 opacity-90">Afrique • Amérique du Nord</div>
+                  <div className="text-sm mt-2 opacity-90">Data Science • IA • MLOps</div>
                 </div>
               </div>
             </motion.div>
@@ -172,11 +184,39 @@ const About = () => {
           </div>
         </motion.div>
 
-        {/* Education Section */}
+        {/* Specializations Section */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 0.8 }}
+          className="mb-16"
+        >
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Spécialisations</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {specializations.map((spec, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.1, duration: 0.8 }}
+                whileHover={{ y: -5, scale: 1.02 }}
+                className="bg-white rounded-xl shadow-lg p-6 text-center"
+              >
+                <div className="mb-4 flex justify-center">
+                  {spec.icon}
+                </div>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">{spec.title}</h3>
+                <p className="text-gray-600 text-sm">{spec.description}</p>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
+
+        {/* Education Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.8, duration: 0.8 }}
           className="mb-16"
         >
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Formation Académique</h2>
@@ -212,44 +252,17 @@ const About = () => {
           </div>
         </motion.div>
 
-        {/* Values Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.8, duration: 0.8 }}
-        >
-          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Mes Valeurs</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {values.map((value, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 50 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.2, duration: 0.8 }}
-                whileHover={{ y: -5, scale: 1.02 }}
-                className="bg-white rounded-2xl shadow-lg p-8 text-center"
-              >
-                <div className="mb-4 flex justify-center">
-                  {value.icon}
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">{value.title}</h3>
-                <p className="text-gray-600">{value.description}</p>
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
-
-        {/* CTA Section */}
+        {/* Impact Statement */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1, duration: 0.8 }}
-          className="mt-16 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 text-white text-center"
+          className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 text-white text-center"
         >
-          <h3 className="text-2xl font-bold mb-4">Vision et Impact</h3>
+          <h3 className="text-2xl font-bold mb-4">Vision et Approche</h3>
           <p className="text-lg max-w-3xl mx-auto leading-relaxed">
-            Je conçois des solutions de data science et d'IA sur mesure, avec une vision orientée impact, 
-            rigueur et excellence technologique.
+            Je conçois et déploie des solutions de science des données et d'intelligence artificielle 
+            sur mesure, avec une approche rigoureuse, moderne et orientée résultats.
           </p>
         </motion.div>
       </div>

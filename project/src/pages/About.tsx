@@ -20,7 +20,7 @@ const About = () => {
     },
     {
       degree: 'Licence en Statistique et Probabilité',
-      institution: 'Université',
+      institution: 'Université de Bangui',
       year: '2019-2022',
       description: 'Solides bases en mathématiques appliquées, probabilités et économie quantitative'
     }
@@ -72,18 +72,20 @@ const About = () => {
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Mon Histoire</h2>
               <div className="space-y-4 text-gray-700 leading-relaxed">
                 <p>
-                  Passionné par les mathématiques et la technologie depuis mon plus jeune âge, 
-                  j'ai naturellement orienté mes études vers la statistique et la science des données.
+                  Passionné par la valorisation des données, l’intelligence artificielle et les   solutions technologiques à impact, 
+                  j’ai orienté mes études et mon parcours professionnel vers la science des données appliquée. 
+                  Mon cheminement m’a permis d’exploiter ces compétences sur le terrain, à travers des projets à fort enjeu au sein d’organisations de renom telles qu’African Parks Network, Maverick Analytik ou encore Desjardins.
+
                 </p>
                 <p>
-                  Mon parcours m'a mené du Cameroun au Canada, où j'ai pu approfondir mes connaissances 
-                  en intelligence d'affaires et analytique. Cette expérience internationale m'a permis 
-                  d'acquérir une perspective globale sur les enjeux de la data science.
+                  Avec plus de 5 années d’expérience dans l’analyse de données, la business intelligence et la mise en production de modèles analytiques (prédiction, classification, segmentation) et cognitifs (compréhension du langage, 
+                  extraction d’information), j’ai développé une expertise solide en NLP/NLU, visualisation interactive, détection d’anomalies, MLOps et systèmes de recommandation. Mes projets personnels, 
+                  académiques et professionnels m'ont permis de couvrir l’ensemble du cycle de vie des solutions IA, de la modélisation à l’orchestration complète, dans des environnements complexes et orientés impact.
                 </p>
                 <p>
-                  Aujourd'hui, je me spécialise dans le développement de solutions d'intelligence 
-                  artificielle qui ont un impact réel sur les entreprises et la société. Mon approche 
-                  combine rigueur scientifique et pragmatisme business.
+                  Aujourd’hui, je conçois des solutions d’intelligence artificielle robustes et déployables, 
+                  en veillant à ce qu’elles répondent à des besoins métiers concrets, mesurables et durables. 
+                  Mon approche allie excellence technique, compréhension fine des enjeux organisationnels et souci constant de l’impact.
                 </p>
               </div>
             </div>

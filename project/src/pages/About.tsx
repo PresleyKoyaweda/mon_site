@@ -5,23 +5,24 @@ import { GraduationCap, Award, MapPin, Calendar, Users, Target } from 'lucide-re
 const About = () => {
   const education = [
     {
-      degree: 'Master en Ingénierie des données et IA appliquée',
-      institution: 'École Supérieure',
-      year: '2023-2024',
-      description: 'Spécialisation en machine learning, deep learning et déploiement de modèles IA'
+      degree: 'M.Ing. Computer Engineering : Data Engineering and Analytics',
+      institution: 'Polytechnique Montréal',
+      year: '2024 à 2025',
+      location: 'Canada',
+      description: 'Spécialisation en ingénierie des données, apprentissage automatique, déploiement de modèles IA, NLP et MLOps'
     },
     {
-      degree: 'Attestation d\'études collégiales en Intelligence d\'affaires et analytique',
-      institution: 'Collège Canadien',
-      year: '2022-2023',
-      location: 'Canada',
-      description: 'Formation pratique en analyse de données, visualisation et business intelligence'
+      degree: 'Baccalauréat en Statistique Décisionnelle',
+      institution: 'ISSEA',
+      year: '2018-2020',
+      location: 'Cameroun',
+      description: 'Formation axée sur les techniques statistiques, la modélisation et l’analyse opérationnelle de données'
     },
     {
       degree: 'Licence en Statistique et Probabilité',
       institution: 'Université',
       year: '2019-2022',
-      description: 'Fondements mathématiques et statistiques pour l\'analyse de données'
+      description: 'Solides bases en mathématiques appliquées, probabilités et économie quantitative'
     }
   ];
 

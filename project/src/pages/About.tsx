@@ -1,0 +1,177 @@
+import React from 'react';
+import { motion } from 'framer-motion';
+import { GraduationCap, Award, MapPin, Calendar, Users, Target } from 'lucide-react';
+
+const About = () => {
+  const education = [
+    {
+      degree: 'Master en Ingénierie des données et IA appliquée',
+      institution: 'École Supérieure',
+      year: '2023-2024',
+      description: 'Spécialisation en machine learning, deep learning et déploiement de modèles IA'
+    },
+    {
+      degree: 'Attestation d\'études collégiales en Intelligence d\'affaires et analytique',
+      institution: 'Collège Canadien',
+      year: '2022-2023',
+      location: 'Canada',
+      description: 'Formation pratique en analyse de données, visualisation et business intelligence'
+    },
+    {
+      degree: 'Licence en Statistique et Probabilité',
+      institution: 'Université',
+      year: '2019-2022',
+      description: 'Fondements mathématiques et statistiques pour l\'analyse de données'
+    }
+  ];
+
+  const values = [
+    {
+      icon: <Target className="text-blue-600" size={32} />,
+      title: 'Innovation',
+      description: 'Recherche constante de solutions créatives et efficaces'
+    },
+    {
+      icon: <Users className="text-green-600" size={32} />,
+      title: 'Collaboration',
+      description: 'Travail d\'équipe et partage de connaissances'
+    },
+    {
+      icon: <Award className="text-purple-600" size={32} />,
+      title: 'Excellence',
+      description: 'Engagement vers la qualité et l\'amélioration continue'
+    }
+  ];
+
+  return (
+    <div className="min-h-screen py-20">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Header */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="text-center mb-16"
+        >
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">À propos de moi</h1>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Découvrez mon parcours, mes formations et ma vision de la science des données
+          </p>
+        </motion.div>
+
+        {/* Bio Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2, duration: 0.8 }}
+          className="bg-white rounded-2xl shadow-xl p-8 mb-16"
+        >
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">Mon Histoire</h2>
+              <div className="space-y-4 text-gray-700 leading-relaxed">
+                <p>
+                  Passionné par les mathématiques et la technologie depuis mon plus jeune âge, 
+                  j'ai naturellement orienté mes études vers la statistique et la science des données.
+                </p>
+                <p>
+                  Mon parcours m'a mené du Cameroun au Canada, où j'ai pu approfondir mes connaissances 
+                  en intelligence d'affaires et analytique. Cette expérience internationale m'a permis 
+                  d'acquérir une perspective globale sur les enjeux de la data science.
+                </p>
+                <p>
+                  Aujourd'hui, je me spécialise dans le développement de solutions d'intelligence 
+                  artificielle qui ont un impact réel sur les entreprises et la société. Mon approche 
+                  combine rigueur scientifique et pragmatisme business.
+                </p>
+              </div>
+            </div>
+            
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              className="relative"
+            >
+              <div className="w-full h-96 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center shadow-2xl">
+                <div className="text-white text-center">
+                  <GraduationCap size={80} className="mx-auto mb-4" />
+                  <div className="text-2xl font-bold">Formation Continue</div>
+                  <div className="text-lg">& Innovation</div>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </motion.div>
+
+        {/* Education Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.4, duration: 0.8 }}
+          className="mb-16"
+        >
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Formation Académique</h2>
+          <div className="space-y-6">
+            {education.map((edu, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, x: -50 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: index * 0.1, duration: 0.8 }}
+                whileHover={{ scale: 1.02 }}
+                className="bg-white rounded-xl shadow-lg p-6 border-l-4 border-blue-500"
+              >
+                <div className="flex flex-wrap items-start justify-between mb-3">
+                  <h3 className="text-xl font-bold text-gray-900">{edu.degree}</h3>
+                  <div className="flex items-center text-gray-500 text-sm">
+                    <Calendar size={16} className="mr-1" />
+                    {edu.year}
+                  </div>
+                </div>
+                <div className="flex items-center text-gray-600 mb-2">
+                  <GraduationCap size={16} className="mr-2" />
+                  {edu.institution}
+                  {edu.location && (
+                    <>
+                      <MapPin size={16} className="ml-4 mr-1" />
+                      {edu.location}
+                    </>
+                  )}
+                </div>
+                <p className="text-gray-700">{edu.description}</p>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
+
+        {/* Values Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.6, duration: 0.8 }}
+        >
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Mes Valeurs</h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            {values.map((value, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.2, duration: 0.8 }}
+                whileHover={{ y: -5, scale: 1.02 }}
+                className="bg-white rounded-2xl shadow-lg p-8 text-center"
+              >
+                <div className="mb-4 flex justify-center">
+                  {value.icon}
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">{value.title}</h3>
+                <p className="text-gray-600">{value.description}</p>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
+      </div>
+    </div>
+  );
+};
+
+export default About;

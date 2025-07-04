@@ -9,16 +9,16 @@ const About = () => {
       institution: 'Polytechnique de Montréal',
       year: '2024-2025',
       location: 'Montréal, QC, Canada',
-      description: 'Spécialisation en science des données et intelligence artificielle, avec un accent sur l\'ingénierie des données, le machine learning, le NLP et les pratiques MLOps.',
+      description: 'Spécialisation en science des données, apprentissage automatique, NLP et MLOps',
       icon: '🎓',
       color: 'blue'
     },
     {
       degree: 'Baccalauréat en Statistique Décisionnelle',
-      institution: 'ISSEA (Institut Sous-Régional de Statistique et d\'Économie Appliquée)',
+      institution: 'ISSEA',
       year: '2018-2020',
       location: 'Afrique Centrale',
-      description: 'Solides fondements en mathématiques appliquées, statistique inférentielle et modélisation prédictive.',
+      description: 'Fondements en mathématiques appliquées, statistique inférentielle et modélisation prédictive',
       icon: '📊',
       color: 'purple'
     },
@@ -27,7 +27,7 @@ const About = () => {
       institution: 'Université de Bangui',
       year: '2015-2018',
       location: 'République Centrafricaine',
-      description: 'Bases en analyse quantitative et raisonnement économique.',
+      description: 'Bases en analyse quantitative et raisonnement économique',
       icon: '📐',
       color: 'green'
     }
@@ -36,22 +36,22 @@ const About = () => {
   const experience = [
     {
       company: 'Desjardins',
-      role: 'Analyste de données & Développeur BI',
-      description: 'Solutions analytiques avancées dans une grande institution financière',
+      role: 'Projets IA & MLOps',
+      description: 'Développement de solutions d\'intelligence artificielle et mise en place de pipelines MLOps dans l\'écosystème financier',
       icon: <Building className="text-blue-600" size={24} />,
       color: 'blue'
     },
     {
       company: 'Maverick Analytik',
-      role: 'Analyste de données',
-      description: 'Soutien aux PME avec des solutions d\'analyse de données',
+      role: 'Accompagnement PME',
+      description: 'Conception de solutions analytiques sur mesure pour optimiser les performances des petites et moyennes entreprises',
       icon: <Target className="text-green-600" size={24} />,
       color: 'green'
     },
     {
       company: 'African Parks Network',
-      role: 'Analyste de données',
-      description: 'Conservation de l\'environnement et protection de la biodiversité',
+      role: 'Projets environnement',
+      description: 'Analyse de données pour la conservation de la biodiversité et la protection des écosystèmes africains',
       icon: <Globe className="text-purple-600" size={24} />,
       color: 'purple'
     }
@@ -61,17 +61,17 @@ const About = () => {
     {
       icon: <Target className="text-blue-600" size={32} />,
       title: 'Innovation',
-      description: 'Recherche constante de solutions créatives et efficaces pour valoriser les données'
+      description: 'Recherche constante de solutions créatives pour transformer les données en valeur business'
     },
     {
       icon: <Users className="text-green-600" size={32} />,
-      title: 'Impact Social',
-      description: 'Engagement vers des projets qui ont un impact positif sur la société'
+      title: 'Impact',
+      description: 'Engagement vers des projets qui génèrent un impact mesurable et durable'
     },
     {
       icon: <Award className="text-purple-600" size={32} />,
       title: 'Excellence',
-      description: 'Combinaison de rigueur scientifique et de pragmatisme business'
+      description: 'Combinaison de rigueur scientifique et de pragmatisme opérationnel'
     }
   ];
 
@@ -101,24 +101,26 @@ const About = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Mon Histoire</h2>
-              <div className="space-y-4 text-gray-700 leading-relaxed">
+              <div className="space-y-4 text-gray-700 leading-relaxed text-lg">
                 <p>
-                  <strong>Passionné par la valorisation des données, l'intelligence artificielle et les technologies de rupture</strong>, 
+                  Passionné par la valorisation des données, l'intelligence artificielle et les technologies de rupture, 
                   j'ai très tôt orienté mon parcours vers la science des données. De mes premières analyses statistiques 
                   en Afrique centrale à la réalisation de projets stratégiques en Amérique du Nord, j'ai développé une 
-                  <strong> vision globale des enjeux data</strong> à travers différents contextes métier.
+                  vision globale des enjeux data à travers différents contextes métier.
                 </p>
                 <p>
-                  Fort d'<strong>environ 4 années d'expérience en tant qu'analyste de données et développeur BI</strong>, 
-                  j'ai accompagné des organisations aux missions variées : de la conservation de l'environnement avec 
-                  <strong> African Parks Network</strong>, au soutien aux PME avec <strong>Maverick Analytik</strong>, 
-                  jusqu'à la mise en place de solutions analytiques avancées dans une grande institution financière 
-                  comme <strong>Desjardins</strong>.
+                  Fort d'environ 4 années d'expérience en tant qu'analyste de données et développeur BI, j'ai accompagné 
+                  des organisations aux missions variées. Chez African Parks Network, j'ai contribué à des projets de 
+                  conservation environnementale en analysant des données critiques pour la protection de la biodiversité. 
+                  Avec Maverick Analytik, j'ai développé des solutions analytiques sur mesure pour accompagner la croissance 
+                  des PME. Chez Desjardins, j'ai participé à la mise en place de solutions d'intelligence artificielle et 
+                  de pipelines MLOps dans l'écosystème financier.
                 </p>
                 <p>
-                  Aujourd'hui, je conçois et déploie des <strong>solutions d'IA sur mesure</strong>, en combinant des 
-                  compétences solides en science des données, machine learning, NLP, déploiement en production et MLOps, 
-                  avec une <strong>sensibilité forte aux enjeux business et éthiques</strong>.
+                  Aujourd'hui, je me spécialise dans le développement de solutions d'IA sur mesure, en combinant des 
+                  compétences solides en NLP, déploiement de modèles ML, visualisation interactive et MLOps. Mon approche 
+                  allie rigueur scientifique et pragmatisme business, avec une sensibilité forte aux enjeux éthiques et 
+                  à l'impact social des technologies que je développe.
                 </p>
               </div>
             </div>
@@ -164,7 +166,7 @@ const About = () => {
                     <p className={`text-${exp.color}-600 font-medium`}>{exp.role}</p>
                   </div>
                 </div>
-                <p className="text-gray-600">{exp.description}</p>
+                <p className="text-gray-600 leading-relaxed">{exp.description}</p>
               </motion.div>
             ))}
           </div>
@@ -244,10 +246,10 @@ const About = () => {
           transition={{ delay: 1, duration: 0.8 }}
           className="mt-16 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 text-white text-center"
         >
-          <h3 className="text-2xl font-bold mb-4">Une approche globale et éthique</h3>
-          <p className="text-lg max-w-2xl mx-auto">
-            Mon parcours international et ma diversité d'expériences me permettent d'aborder 
-            chaque projet avec une perspective unique, alliant expertise technique et sensibilité culturelle.
+          <h3 className="text-2xl font-bold mb-4">Vision et Impact</h3>
+          <p className="text-lg max-w-3xl mx-auto leading-relaxed">
+            Je conçois des solutions de data science et d'IA sur mesure, avec une vision orientée impact, 
+            rigueur et excellence technologique.
           </p>
         </motion.div>
       </div>

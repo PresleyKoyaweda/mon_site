@@ -20,21 +20,34 @@ const Contact = () => {
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 2000));
-    
-    setIsSubmitting(false);
-    setIsSubmitted(true);
-    
-    // Reset form after 3 seconds
-    setTimeout(() => {
-      setIsSubmitted(false);
+  e.preventDefault();
+  setIsSubmitting(true);
+
+  try {
+    const response = await fetch('https://formspree.io/f/manjzddo', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(formData)
+    });
+
+    if (response.ok) {
+      setIsSubmitted(true);
       setFormData({ name: '', email: '', subject: '', message: '' });
-    }, 3000);
-  };
+
+      // Réinitialiser l'état après quelques secondes
+      setTimeout(() => setIsSubmitted(false), 3000);
+    } else {
+      alert("Une erreur s'est produite. Veuillez réessayer.");
+    }
+  } catch (error) {
+    alert("Erreur lors de l'envoi : " + error);
+  } finally {
+    setIsSubmitting(false);
+  }
+};
+;
 
   const contactInfo = [
     {

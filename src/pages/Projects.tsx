@@ -749,14 +749,6 @@ Une attention particulière a été portée à la tolérance aux pannes à trave
 }
 
 
-
-
-
-
-
-
-
-
   ];
 
   const categories = [

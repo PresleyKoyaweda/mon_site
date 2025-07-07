@@ -76,7 +76,7 @@ const Contact = () => {
   const socialLinks = [
     { 
       icon: <Globe size={24} />, 
-      url: 'https://www.gervais-presley-koyaweda.com', 
+      url: 'https://site-web-kgp.netlify.app', 
       label: 'Site Web', 
       color: 'indigo' 
     },
@@ -147,7 +147,7 @@ const Contact = () => {
             
             {/* Website Link */}
             <motion.a
-              href="https://www.gervais-presley-koyaweda.com"
+              href="https://site-web-kgp.netlify.app"
               target="_blank"
               rel="noopener noreferrer"
               initial={{ opacity: 0, scale: 0.8 }}

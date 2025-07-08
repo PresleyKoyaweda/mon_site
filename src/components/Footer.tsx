@@ -7,7 +7,7 @@ const Footer = () => {
     { icon: <Phone size={18} />, text: 'Contactez-moi via LinkedIn ou formulaire', href: '#' },
     { icon: <Mail size={18} />, text: 'gpresleyk@gmail.com', href: 'mailto:gpresleyk@gmail.com' },
     { icon: <MapPin size={18} />, text: 'Brossard, QC, CA', href: '#' },
-    { icon: <Globe size={18} />, text: 'www.gervais-presley-koyaweda.com', href: 'https://www.gervais-presley-koyaweda.com' },
+    { icon: <Globe size={18} />, text: 'www.gervais-presley-koyaweda.com', href: 'https://site-web-kgp.netlify.app' },
     { icon: <Linkedin size={18} />, text: 'LinkedIn', href: 'https://www.linkedin.com/in/presley-koyaweda' },
     { icon: <Github size={18} />, text: 'GitHub', href: 'https://github.com/PresleyKoyaweda' }
   ];

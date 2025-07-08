@@ -176,7 +176,7 @@ Les étudiants implémentent un pipeline utilisant NetworkX et analysent des gra
   color: 'violet',
   image: 'https://ai2-s2-public.s3.amazonaws.com/figures/2017-08-08/61229738b0fd2abd8ca994c4445e49b36e4f3e60/5-Figure1-1.png', // image à ajouter ou proposer
   liveUrl: null, // projet non en ligne
-  githubUrl: null, // repo privé ou non disponible
+  githubUrl: 'https://github.com/PresleyKoyaweda/TP1-NLP-Recherche-documents-par-similarit-', // repo privé ou non disponible
   features: [
     "Matching sémantique entre affirmation et corpus scientifique",
     "Utilisation de TF-IDF, BM25 et SBERT pour la représentation des textes",
@@ -197,7 +197,7 @@ Les étudiants implémentent un pipeline utilisant NetworkX et analysent des gra
   color: 'orange',
   image: 'https://tse3.mm.bing.net/th/id/OIP.YyRKql6G_Ldecect_gfPlgHaD4?r=0&rs=1&pid=ImgDetMain&o=7&rm=3', // à remplacer ou créer
   liveUrl: null, // projet non en ligne
-  githubUrl: null, // repo non disponible
+  githubUrl: 'https://github.com/PresleyKoyaweda/TP2-NLP-Plongements-lexicaux-synonymes-antonymes', // repo non disponible
   features: [
     "Chargement et exploration du modèle GloVe pré-entraîné",
     "Évaluation de GloVe sur le dataset SimLex-999",
@@ -218,7 +218,7 @@ Les étudiants implémentent un pipeline utilisant NetworkX et analysent des gra
   color: 'teal',
   image: 'https://penseepositive.net/wp-content/uploads/2023/04/bienfaits-scientifiques-affirmations-positives.png', // à créer ou proposer
   liveUrl: null,
-  githubUrl: null,
+  githubUrl:'https://github.com/PresleyKoyaweda/TP3-NLP-Alignement-entre-affirmations-et-r-sum-s-scientifiques/tree/main',
   features: [
     "Vectorisation des affirmations et segments de résumés avec SBERT",
     "Recherche du segment le plus proche par similarité cosinus",
@@ -239,7 +239,7 @@ Les étudiants implémentent un pipeline utilisant NetworkX et analysent des gra
   color: 'violet',
   image: 'https://safjan.com/images/retrieval_augmented_generation/RAG.png', // image à ajouter
   liveUrl: null, // projet non en ligne
-  githubUrl: null, // repo privé ou indisponible
+  githubUrl: 'https://github.com/PresleyKoyaweda/TP4-NLP-RAG-pour-Questions-R-ponses-avec-LLM', // repo privé ou indisponible
   features: [
     "Génération conditionnée par les passages les plus pertinents",
     "Recherche vectorielle via FAISS avec plongements BGE",
@@ -309,7 +309,7 @@ L’environnement est automatisé avec des scripts Bash et utilise EMR, EC2 et l
   color: 'orange',
   image: 'https://miro.medium.com/v2/resize:fit:783/1*4PtT10nghLEOAz3xyztwMA.png',
   liveUrl: null, // Projet non déployé en ligne
-  githubUrl: null, // Code privé ou disponible sur demande
+  githubUrl: 'https://github.com/PresleyKoyaweda/LOG8415-Advanced-Concepts-of-Cloud-Computing-LAB_2', // Code privé ou disponible sur demande
   features: [
     "Déploiement d'une application Flask dans des conteneurs Docker",
     "Orchestration des requêtes via une instance orchestratrice",
@@ -470,7 +470,7 @@ L’environnement est automatisé avec des scripts Bash et utilise EMR, EC2 et l
   color: 'orange',
   image: 'https://tse1.mm.bing.net/th/id/OIP.5wSRYr5Q0Jh5q02sfkhpEgHaCt?r=0&rs=1&pid=ImgDetMain&o=7&rm=3',
   liveUrl: null,
-  githubUrl: null,
+  githubUrl: 'https://github.com/PresleyKoyaweda/TP1-IA-Techniques-Probabiliste-et-Apprentissage-D-tection-d-objets-et-r-seaux-de-neurones-conv',
   features: [
     "Détection de chiffres dans des images à l’aide de HOG, seuillage, ouverture/fermeture morphologique",
     "Entraînement d’un CNN sur des chiffres extraits manuellement",
@@ -483,7 +483,7 @@ L’environnement est automatisé avec des scripts Bash et utilise EMR, EC2 et l
 ,
    {
   id: 21,
-  title: 'TP1 IA (Techniques Probabiliste et Apprentissage): Traduction automatique multilingue',
+  title: 'TP3 IA (Techniques Probabiliste et Apprentissage): Traduction automatique multilingue',
   description: "Implémentation et comparaison de modèles séquentiels pour la traduction anglais-français",
   longDescription: `Ce projet vise à construire un système de traduction automatique à partir de données bilingues anglais-français. Trois architectures sont étudiées : un RNN de base (fourni), un GRU-RNN implémenté manuellement, et un Transformer Encoder-Decoder conçu de zéro (sans utiliser nn.Transformer). L’ensemble du pipeline comprend le prétraitement linguistique, la création de vocabulaires, la vectorisation des séquences, l’entraînement, l’évaluation BLEU ainsi que la visualisation de l’attention.`,
   stack: ['Python', 'PyTorch', 'Spacy', 'WandB', 'BLEU Score'],
@@ -492,7 +492,7 @@ L’environnement est automatisé avec des scripts Bash et utilise EMR, EC2 et l
   color: 'orange',
   image: 'https://www.altosor-communication.com/wp-content/uploads/2023/09/wpml-wordpress-traduction-1.jpg', // à adapter si nécessaire
   liveUrl: null, // projet non en ligne
-  githubUrl: null, // repo non disponible
+  githubUrl: 'https://github.com/PresleyKoyaweda/TP3-IA-Techniques-Probabiliste-et-Apprentissage-Traduction-automatique-multilingue', // repo non disponible
   features: [
     "Chargement et nettoyage d’un corpus bilingue anglais-français",
     "Vectorisation et encodage de séquences (vocabulaire, tokens, PAD)",
@@ -510,12 +510,12 @@ L’environnement est automatisé avec des scripts Bash et utilise EMR, EC2 et l
   description: 'Implémentation complète d’un modèle de diffusion probabiliste pour la génération d’images réalistes.',
   longDescription: `Ce projet final du cours "IA : Techniques Probabilistes et Apprentissage" visait à implémenter un modèle de diffusion débruitant (DDPM) à partir de zéro, en suivant l'article fondateur de Jonathan Ho et al. (2020). L’approche a été appliquée à deux jeux de données classiques : MNIST (images 28x28 en niveaux de gris) et CIFAR-10 (images couleur 32x32, 10 classes). L’entraînement a été réalisé avec PyTorch, en optimisant la prédiction du bruit à chaque étape temporelle du processus de débruitage.`,
   stack: ['Python', 'PyTorch', 'MNIST', 'CIFAR-10', 'DDPM', 'UNet'],
-  category: 'ml',
+  category: 'nlp',
   icon: <Zap className="text-rose-600" size={32} />,
   color: 'rose',
   image: 'https://datasets.activeloop.ai/wp-content/uploads/2022/09/CIFAR-10-dataset-Activeloop-Platform-visualization-image-1.webp', // image à ajouter ou modifier
   liveUrl: null, // pas de démo en ligne
-  githubUrl: null, // pas de repo public
+  githubUrl: 'https://github.com/PresleyKoyaweda/Projet-Final-IA-Mod-les-de-Diffusion-DDPM-sur-MNIST-et-CIFAR-10', // pas de repo public
   features: [
     "Implémentation complète d’un DDPM depuis l’article original",
     "Application à MNIST et CIFAR-10 pour la génération d’images",

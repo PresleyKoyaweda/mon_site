@@ -93,6 +93,28 @@ const Projects = () => {
         'Recommandations stratégiques'
       ]
     },
+
+    {
+  id: '3B',
+  title: 'Dashboard Marathon de Berlin',
+  description: 'Analyse interactive des performances au Marathon de Berlin selon la météo, le genre et le temps.',
+  longDescription: 'Le marathon de Berlin est l’un des plus grands marathons européens. Au fil des années, les coureurs sont devenus plus nombreux et performants. Mais comment les conditions météorologiques comme la température ou la pluie influencent-elles les performances ? Ce tableau de bord interactif vous permet d’explorer ces questions en filtrant par période, genre et catégorie. Découvrez les tendances, comparez les groupes et interprétez visuellement les données historiques.',
+  stack: ['Plotly', 'Dash', 'Python', 'Pandas', 'Heroku'],
+  category: 'viz',
+  icon: <Activity className="text-blue-500" size={32} />,
+  color: 'blue',
+  image: 'https://images.pexels.com/photos/2402777/pexels-photo-2402777.jpeg?auto=compress&cs=tinysrgb&w=600',
+  liveUrl: 'https://berlinmarathondashboard.onrender.com/',
+  githubUrl: 'https://github.com/PresleyKoyaweda/Visualisation-du-Marathon-de-Berlin',
+  features: [
+    'Visualisations interactives avec Plotly et Dash',
+    'Exploration des performances par genre, année et météo',
+    'Filtres dynamiques pour période, température et type de coureur',
+    'Tableaux et graphiques comparatifs intuitifs',
+    'Déployé sur Render avec gestion automatique du backend'
+  ]
+}
+,
     
     {
   id: 4,
@@ -352,7 +374,7 @@ L’environnement est automatisé avec des scripts Bash et utilise EMR, EC2 et l
   color: 'orange',
   image: 'https://tse4.mm.bing.net/th/id/OIP.Xu3wc_tzhMmvU5ANcTcYCwHaFo?r=0&rs=1&pid=ImgDetMain&o=7&rm=3', // à insérer ou à proposer
   liveUrl: null, // projet académique non déployé
-  githubUrl: null, // projet non en ligne
+  githubUrl: 'https://github.com/PresleyKoyaweda/Dev1-M-thodes-Statistique-d-Apprentissage-R-gression-lin-aire-simple-et-optimisation-du-RSS', // projet non en ligne
   features: [
     'Estimation des paramètres Beta0 et Beta1 d’une régression linéaire simple',
     'Visualisation du RSS et des contours de la fonction de coût',
@@ -374,7 +396,7 @@ L’environnement est automatisé avec des scripts Bash et utilise EMR, EC2 et l
   color: 'amber',
   image: 'https://images.pexels.com/photos/6801643/pexels-photo-6801643.jpeg?auto=compress&cs=tinysrgb&w=600',
   liveUrl: null, // non en ligne
-  githubUrl: null, // privé ou non disponible
+  githubUrl: 'https://github.com/PresleyKoyaweda/Dev2-M-thodes-Statistique-d-Apprentissage-R-gression-lin-aire-et-classification-supervis-e', // privé ou non disponible
   features: [
     "Régression linéaire simple, multiple et avec interaction",
     "Diagnostics de résidus et identification des points influents",
@@ -396,7 +418,7 @@ L’environnement est automatisé avec des scripts Bash et utilise EMR, EC2 et l
   color: 'pink',
   image: 'https://pmarchand1.github.io/ECL7102/images/biais_variance.png', // à ajouter ou modifier
   liveUrl: null, // non déployé
-  githubUrl: null, // pas en ligne
+  githubUrl: 'https://github.com/PresleyKoyaweda/Dev3-M-thodes-Statistique-d-Apprentissage-S-lection-de-mod-les-et-valuation-statistique', // pas en ligne
   features: [
     "Évaluation de KNN, régression logistique, LDA et QDA via LOOCV et 5-Fold CV",
     "Estimation d'un paramètre par bootstrap avec intervalle de confiance",
@@ -440,7 +462,7 @@ L’environnement est automatisé avec des scripts Bash et utilise EMR, EC2 et l
   color: 'orange',
   image: 'https://markovate.com/wp-content/uploads/2023/05/Unsupervised-Machine-Learning-for-Problem-Solving-800x368.webp',
   liveUrl: null, // projet non en ligne
-  githubUrl: null, // projet non publié
+  githubUrl: 'https://github.com/PresleyKoyaweda/Dev5-M-thodes-Statistique-d-Apprentissage-Apprentissage-supervis-validation-crois-e-et-complexit-', // projet non publié
   features: [
     "Implémentation de la validation croisée k-fold",
     "Estimation des erreurs de biais et variance",
@@ -525,94 +547,7 @@ L’environnement est automatisé avec des scripts Bash et utilise EMR, EC2 et l
   ],
   notice: "⚠️ Ce projet académique n'est pas actuellement en ligne pour éviter les coûts d'hébergement. Contactez-moi pour une démonstration ou le code complet."
 }
-    ,
-  {
-  id: 23,
-  title: 'TP1 Systèmes de recommandation: Systèmes de recommandation collaboratifs',
-  description: "Évaluation de méthodes collaboratives pour la prédiction de notes utilisateurs",
-  longDescription: `Ce projet explore trois approches de filtrage collaboratif pour les systèmes de recommandation : la moyenne globale, l'approche utilisateur-utilisateur, et l'approche item-item. Les performances des prédictions sont évaluées à l’aide d’une validation croisée 5 replis, en comparant les métriques RMSE et MAE sur des matrices utilisateurs-items issues de jeux de données réels.`,
-  stack: ['Python', 'Pandas', 'Numpy', 'Matplotlib', 'Scikit-learn'],
-  category: 'ml',
-  icon: <Users className="text-pink-500" size={32} />,
-  color: 'pink',
-  image: 'https://www.smalsresearch.be/wp-content/uploads/2022/06/recsys6-2.png',
-  liveUrl: null,
-  githubUrl: null,
-  features: [
-    "Création de la matrice utilisateur-item à partir de données brutes",
-    "Mise en œuvre de la validation croisée à 5 replis",
-    "Prédiction via moyenne globale, user-based et item-based",
-    "Évaluation des performances avec RMSE et MAE",
-    "Visualisation et analyse comparative des approches"
-  ],
-  notice: "⚠️ Ce projet académique n'est pas en ligne pour des raisons de confidentialité. Contactez-moi pour en discuter."
-}
 ,
- {
-  id: 24,
-  title: 'TP2 Systèmes de recommandation: Filtrage collaboratif et SVD',
-  description: "Évaluation d’un système de recommandation basé sur la décomposition en valeurs singulières (SVD).",
-  longDescription: `Ce projet explore différentes méthodes de recommandation, notamment le filtrage collaboratif basé sur la moyenne, la factorisation matricielle (SVD), ainsi que les distances de similarité (Pearson, Euclidienne). Le pipeline inclut le nettoyage et la transformation des données, la construction des matrices utilisateur-item, la factorisation, l’évaluation de la performance (RMSE) selon plusieurs valeurs de k, et l’analyse de similarité entre utilisateurs.`,
-  stack: ['Python', 'Numpy', 'Pandas', 'SVD', 'Matplotlib'],
-  category: 'ml',
-  icon: <BarChart3 className="text-orange-500" size={32} />,
-  color: 'orange',
-  image: 'https://laviedesidees.fr/IMG/jpg/types-of-recommendation-systems.jpg',
-  liveUrl: null,
-  githubUrl: null,
-  features: [
-    "Recommandation par moyenne utilisateur/item",
-    "Factorisation matricielle avec SVD",
-    "Comparaison des performances via RMSE",
-    "Analyse de la similarité entre utilisateurs",
-    "Visualisation des résultats et sélection du meilleur k"
-  ],
-  notice: "⚠️ Ce projet académique n'est pas en ligne. Contactez-moi pour une démonstration ou accès aux résultats."
-}
-,
- {
-  id: 25,
-  title: 'TP3 Systèmes de recommandation: Systèmes de recommandation avec Deep Learning',
-  description: 'Recommandation de films basée sur les plongements utilisateur-film via un modèle Two-Tower.',
-  longDescription: `Ce projet vise à implémenter un système de recommandation utilisant des réseaux de neurones avec la librairie PyTorch. En s'appuyant sur la base MovieLens 100k, un modèle Two-Tower a été développé pour produire des plongements (embeddings) utilisateurs et films. La prédiction est obtenue via le produit scalaire des embeddings. Le pipeline inclut l'entraînement, l'évaluation avec RMSE/MAE, et le suivi de l'apprentissage (early-stopping, visualisation des courbes).`,
-  stack: ['Python', 'PyTorch', 'Pandas', 'scikit-learn', 'MovieLens 100k'],
-  category: 'ml',
-  icon: <Film className="text-orange-600" size={32} />,
-  color: 'orange',
-  image: 'https://arxiv.org/html/2406.01539v1/x1.png',
-  liveUrl: null,
-  githubUrl: null,
-  features: [
-    'Implémentation d’un modèle Two-Tower pour la recommandation',
-    'Plongements utilisateur-film avec PyTorch',
-    'Évaluation par RMSE et MAE',
-    'Early-stopping pour sélection du nombre optimal d’epochs',
-    'Visualisation des performances en apprentissage'
-  ],
-  notice: "⚠️ Ce projet académique n'est pas actuellement en ligne pour éviter les coûts d'hébergement. Contactez-moi pour une démonstration."
-}
-,
- {
-  id: 26,
-  title: "TP3 Systèmes de recommandation: Apprentissage supervisé sur données réseau",
-  description: "Prédiction d'attributs de nœuds dans un graphe en exploitant des similarités structurelles",
-  longDescription: `Ce projet se concentre sur la prédiction d'informations manquantes dans des graphes réels. En utilisant une approche d'apprentissage supervisé, les caractéristiques des nœuds sont extraites à partir de leur structure de voisinage. Différentes stratégies de représentation (matrices d'adjacence, mesures de centralité, similarité cosinus, etc.) sont évaluées pour entraîner un modèle de prédiction robuste.`,
-  stack: ['Python', 'NetworkX', 'NumPy', 'Pandas', 'scikit-learn', 'Matplotlib', 'Seaborn'],
-  category: 'ml',
-  icon: <BookOpen className="text-yellow-600" size={32} />,
-  color: 'yellow',
-  image: 'https://i.ibb.co/z4crQ9V/1-Iz7b-CLr-PTImn-BDOOEy-E3-LA.png', // à générer ou fournir
-  liveUrl: null,
-  githubUrl: null,
-  features: [
-    "Utilisation de graphes réels (réseaux sociaux ou citation)",
-    "Extraction de features à partir des relations entre nœuds",
-    "Utilisation de la similarité cosinus pour la classification",
-    "Évaluation par précision et MRR (Mean Reciprocal Rank)",
-    "Exploration des performances avec différentes tailles de voisinage"
-  ],
-  notice: "⚠️ Ce projet est académique et non déployé en ligne. Une démo locale est possible sur demande."
-},
 
 {
   id: 27,
@@ -625,7 +560,7 @@ L’environnement est automatisé avec des scripts Bash et utilise EMR, EC2 et l
   color: 'gray',
   image: 'https://tse1.mm.bing.net/th/id/OIP.wq7sntpo3o-E6xahaXU25wAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3',
   liveUrl: null,
-  githubUrl: null,
+  githubUrl: 'https://github.com/PresleyKoyaweda/TP1-Syst-me-Repartis-et-Infonuagique-Docker-R-seautique',
   features: [
     'Création d’un container Docker avec image Debian',
     'Installation et configuration d’un serveur Apache2',
@@ -647,7 +582,7 @@ L’environnement est automatisé avec des scripts Bash et utilise EMR, EC2 et l
   color: 'orange',
   image: 'https://www.innovaphone.com/content/images/Solutions_innovaphone_centres_d-appels_fr.jpg',
   liveUrl: null, // important : laisser vide
-  githubUrl: null, // idem
+  githubUrl: 'https://github.com/PresleyKoyaweda/TP2-Syst-me-Repartis-et-Infonuagique-Appels-de-m-thodes-distance', // idem
   features: [
     'Appels de méthodes à distance avec gRPC',
     'Gestionnaire FIFO de soumission de tâches',
@@ -669,7 +604,7 @@ L’environnement est automatisé avec des scripts Bash et utilise EMR, EC2 et l
   color: 'gray',
   image: 'https://iboysoft.com/images/en-wiki/distributed-file-system/summary-distributed-file-system.png',
   liveUrl: null, // Non accessible en ligne
-  githubUrl: null, // Non publié
+  githubUrl: 'https://github.com/PresleyKoyaweda/TP3-Syst-me-Repartis-et-Infonuagique-Syst-me-de-fichiers-distribu-avec-GlusterFS', // Non publié
   features: [
     'Volume GlusterFS répliqué et distribué',
     'Orchestration avec Docker',
@@ -690,8 +625,8 @@ L’environnement est automatisé avec des scripts Bash et utilise EMR, EC2 et l
   icon: <Zap className="text-yellow-600" size={32} />,
   color: 'yellow',
   image: 'https://hypertecsp.com/wp-content/uploads/Cloud-inforgraphic.png',
-  liveUrl: '', // Non déployé
-  githubUrl: '', // Non publié
+  liveUrl: null, // Non déployé
+  githubUrl: 'https://github.com/PresleyKoyaweda/TP4-Syst-me-Repartis-et-Infonuagique-Synchronisation-entre-processus-distribu-s', // Non publié
   features: [
     'Architecture client-serveur avec Sockets TCP/IP',
     'Implémentation de threads POSIX côté serveur',
@@ -713,7 +648,7 @@ L’environnement est automatisé avec des scripts Bash et utilise EMR, EC2 et l
   color: 'purple',
   image: 'https://tse3.mm.bing.net/th/id/OIP.-t5B4na8_RrjYxLy039WUQHaD4?r=0&rs=1&pid=ImgDetMain&o=7&rm=3',
   liveUrl: null,
-  githubUrl: null,
+  githubUrl: 'https://github.com/PresleyKoyaweda/TP5-Syst-me-R-parti-et-Infonuagique-Transactions-bancaire-et-concurrence',
   features: [
     'Installation de PostgreSQL sur machine virtuelle Debian',
     'Expérimentation de transactions concurrentes',
@@ -737,7 +672,7 @@ Une attention particulière a été portée à la tolérance aux pannes à trave
   color: 'orange',
   image: 'https://loussi.ca/wp-content/uploads/2023/10/service01-img-big.png',
   liveUrl: null, // Application non en ligne
-  githubUrl: null, // Non disponible publiquement
+  githubUrl: 'https://github.com/PresleyKoyaweda/TP6-Syst-me-R-parti-et-Infonuagique-Service-infonuagique-tol-rant-aux-pannes', // Non disponible publiquement
   features: [
     'Installation d’un cluster Kubernetes local',
     'Déploiement multi-pods et services résilients',
@@ -755,7 +690,8 @@ Une attention particulière a été portée à la tolérance aux pannes à trave
     { id: 'all', label: 'Tous les projets' },
     { id: 'ml', label: 'Machine Learning' },
     { id: 'nlp', label: 'NLP & IA' },
-    { id: 'data', label: 'Data Engineering' }
+    { id: 'data', label: 'Data Engineering' },
+    { id: 'viz', label: 'Data Visualisation' }
   ];
 
   const filteredProjects = filter === 'all' 

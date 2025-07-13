@@ -1,6 +1,16 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Heart, Linkedin, Github, Twitter, Mail, Phone, MapPin, Globe } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import {
+  Heart,
+  Linkedin,
+  Github,
+  Twitter,
+  Mail,
+  Phone,
+  MapPin,
+  Globe
+} from 'lucide-react';
 
 const Footer = () => {
   const contactInfo = [
@@ -17,6 +27,14 @@ const Footer = () => {
     { icon: <Github size={20} />, url: 'https://github.com/PresleyKoyaweda', label: 'GitHub' },
     { icon: <Twitter size={20} />, url: '#', label: 'Twitter' },
     { icon: <Mail size={20} />, url: 'mailto:gpresleyk@gmail.com', label: 'Email' }
+  ];
+
+  const navigationLinks = [
+    { label: 'Accueil', to: '/' },
+    { label: 'À propos', to: '/about' },
+    { label: 'Compétences', to: '/skills' },
+    { label: 'Projets', to: '/projects' },
+    { label: 'Contact', to: '/contact' }
   ];
 
   return (
@@ -86,25 +104,23 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Quick Links */}
+          {/* Navigation Links */}
           <div>
             <h4 className="text-lg font-semibold mb-4">Navigation</h4>
             <ul className="space-y-2 text-gray-300">
-              {['Accueil', 'À propos', 'Compétences', 'Projets', 'Contact'].map((link) => (
-                <li key={link}>
-                  <motion.a
-                    href={`/${link === 'Accueil' ? '' : link.toLowerCase().replace('à propos', 'about')}`}
-                    whileHover={{ x: 5 }}
-                    className="hover:text-blue-400 transition-colors"
-                  >
-                    {link}
-                  </motion.a>
+              {navigationLinks.map((nav, index) => (
+                <li key={index}>
+                  <motion.div whileHover={{ x: 5 }}>
+                    <Link to={nav.to} className="hover:text-blue-400 transition-colors">
+                      {nav.label}
+                    </Link>
+                  </motion.div>
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* Contact Info */}
+          {/* Contact Section */}
           <div>
             <h4 className="text-lg font-semibold mb-4">Contact Direct</h4>
             <div className="space-y-3 text-gray-300">
@@ -117,16 +133,16 @@ const Footer = () => {
               <div className="flex items-center gap-2">
                 <Phone size={16} className="text-green-400" />
                 <span>Contactez-moi via LinkedIn ou formulaire</span>
-               </div>
+              </div>
               <div className="flex items-center gap-2">
                 <MapPin size={16} className="text-purple-400" />
                 <span>Brossard, QC, Canada</span>
               </div>
               <div className="flex items-center gap-2">
                 <Linkedin size={16} className="text-blue-400" />
-                <a 
-                  href="https://www.linkedin.com/in/presley-koyaweda" 
-                  target="_blank" 
+                <a
+                  href="https://www.linkedin.com/in/presley-koyaweda"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-blue-400 transition-colors"
                 >
@@ -135,9 +151,9 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-2">
                 <Github size={16} className="text-gray-400" />
-                <a 
-                  href="https://github.com/PresleyKoyaweda" 
-                  target="_blank" 
+                <a
+                  href="https://github.com/PresleyKoyaweda"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-gray-300 transition-colors"
                 >
@@ -152,9 +168,7 @@ const Footer = () => {
           <p className="text-gray-400 flex items-center justify-center gap-2">
             Développé avec <Heart className="text-red-500" size={16} /> par Presley Koyaweda
           </p>
-          <p className="text-gray-500 text-sm mt-2">
-            © 2024 Tous droits réservés.
-          </p>
+          <p className="text-gray-500 text-sm mt-2">© 2024 Tous droits réservés.</p>
         </div>
       </div>
     </footer>

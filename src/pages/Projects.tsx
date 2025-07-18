@@ -25,7 +25,8 @@ import {
   BookOpen,
   ServerCrash,
   HardDrive,
-  Database
+  Database,
+  MessageCircle
 } from 'lucide-react';
 
 const Projects = () => {
@@ -53,6 +54,31 @@ const Projects = () => {
         'Monitoring des performances du modèle'
       ]
     },
+
+    {
+  id: "Analyse_sentiment",
+  title: "Analyse automatique des avis clients pour optimiser la satisfaction en entreprise",
+  description: "Utilisation des technique de NLP (ppretraitement du texte + Bag of Words) du ML(Regression Logistique) afin classifier automatiquement les commentaires en sentiment positif ou negatif pour la surveillance de la satisfaction client.",
+  longDescription: "Application web de NLP + ML permettant de classifier automatiquement des commentaires en sentiments positifs ou négatifs. Elle aide les entreprises à surveiller la satisfaction client en temps réel, détecter les problèmes récurrents, et anticiper les crises d’image. L’interface est développée avec Streamlit et s’appuie sur un modèle BoW avec TF-IDF + régression logistique, le tout intégré dans une architecture MLOps avec suivi via MLflow.",
+  stack: ["Python", "Streamlit", "MLflow", "scikit-learn", "pandas"],
+  category: "nlp",
+  icon: <MessageCircle className="text-blue-500" size={32} />,
+  color: "blue",
+  image: "https://www.appinio.com/hs-fs/hubfs/Customer%20Satisfaction%20CSAT%20Appinio%20-%20French.png?width=1920&height=1281&name=Customer%20Satisfaction%20CSAT%20Appinio%20-%20French.png",
+  liveUrl: "https://analysedesentiment-kgp.streamlit.app/",
+  githubUrl: "https://github.com/PresleyKoyaweda/Analyse_de_sentiment",
+  features: [
+    "Classification automatique des avis clients",
+    "Interface Streamlit simple et responsive",
+    "Analyse temps réel avec log des prédictions",
+    "Détection des pics de négativité",
+    "Nuage de mots basé sur les retours négatifs",
+    "Alerte automatique en cas de crise",
+    "Suivi des performances du modèle avec MLflow"
+  ],
+  notice: "⚠️ Le modèle fonctionne mieux avec des commentaires en anglais."
+}
+,
     {
       id: 2,
       title: 'Évaluation du défaut de crédit',

@@ -171,11 +171,11 @@ const Skills = () => {
           <div className="grid md:grid-cols-3 gap-6">
             <div>
               <h4 className="font-semibold mb-2">Gestion de Projet</h4>
-              <p className="text-blue-100">Méthodologies Agile, Scrum</p>
+              <p className="text-blue-100">Méthodologies Agile, Scrum, planification, suivi d’avancement</p>
             </div>
             <div>
               <h4 className="font-semibold mb-2">Communication</h4>
-              <p className="text-blue-100">Présentation de résultats, Formation</p>
+              <p className="text-blue-100">Présentation de résultats, vulgarisation, animation de formations</p>
             </div>
             <div>
               <h4 className="font-semibold mb-2">Langues</h4>

@@ -31,17 +31,17 @@ const About = () => {
     {
       icon: <Target className="text-blue-600" size={32} />,
       title: 'Innovation',
-      description: 'Recherche constante de solutions créatives et efficaces'
+      description: 'Curiosité et recherche constante de solutions créatives, efficaces et adaptées aux enjeux actuels.'
     },
     {
       icon: <Users className="text-green-600" size={32} />,
       title: 'Collaboration',
-      description: 'Travail d\'équipe et partage de connaissances'
+      description: 'Co-construction, partage de savoirs et intelligence collective au service de projets à forte valeur ajoutée.'
     },
     {
       icon: <Award className="text-purple-600" size={32} />,
       title: 'Excellence',
-      description: 'Engagement vers la qualité et l\'amélioration continue'
+      description: 'Recherche de l’impact maximal à travers la rigueur, la qualité et l’amélioration continue.'
     }
   ];
 

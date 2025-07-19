@@ -37,7 +37,7 @@ const Hero = () => {
               transition={{ delay: 0.4, duration: 0.8 }}
               className="text-xl sm:text-2xl text-gray-600 font-medium"
             >
-              Ingénieur en Science des Données et Intelligence Artificielle
+              Expert en science des données et intelligence artificielle
             </motion.p>
             
             <motion.p
@@ -46,9 +46,13 @@ const Hero = () => {
               transition={{ delay: 0.6, duration: 0.8 }}
               className="text-lg text-gray-700 leading-relaxed"
             >
-              Je possède une <strong>Licence en Statistique et Probabilité</strong>, une 
-              <strong> Attestation d'études collégiales en Intelligence d'affaires et analytique</strong> obtenue au Canada, 
-              ainsi qu'un <strong>Master en Ingénierie des données et IA appliquée</strong>.
+              J’accompagne les entreprises dans la conception, le déploiement et la mise en production de solutions d’<strong>intelligence artificielle</strong> et de <strong>valorisation des données</strong>. 
+                Fort d’une expertise complète en <strong>data engineering</strong>, <strong>machine learning</strong>, <strong>NLP</strong>, <strong>MLOps/LLMOps</strong> et <strong>BI</strong>, 
+                je transforme les données en leviers d’action concrets à l’aide des technologies modernes et des outils les plus adaptés aux enjeux métier.
+
+                Mon approche couvre l’ensemble du cycle de vie des projets data : collecte et préparation des données, modélisation prédictive, industrialisation des modèles et création de tableaux de bord dynamiques. 
+                Mon objectif : concevoir des solutions sur mesure, robustes, évolutives et orientées impact.
+                
             </motion.p>
             
             <motion.div

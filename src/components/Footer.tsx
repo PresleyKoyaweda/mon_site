@@ -83,7 +83,7 @@ const Footer = () => {
           <div>
             <h3 className="text-2xl font-bold text-blue-400 mb-4">Presley Koyaweda</h3>
             <p className="text-gray-300 mb-4">
-              Ingénieur en Science des Données et Intelligence Artificielle passionné par 
+              Expert en science des données et intelligence artificielle passionné par 
               l'innovation technologique et l'impact social.
             </p>
             <div className="flex space-x-4">

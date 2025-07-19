@@ -1,30 +1,41 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ChevronRight, Brain, Database, Code, ArrowRight, BarChart3 } from 'lucide-react';
+import { ChevronRight, Brain, Database, Code, ArrowRight, BarChart3, Sparkles, Server } from 'lucide-react';
 
 const Home = () => {
   const features = [
     {
-      icon: <Brain className="text-purple-600" size={32} />,
-      title: 'Intelligence Artificielle',
-      description: 'Développement de modèles ML/DL avancés'
-    },
-    {
       icon: <Database className="text-blue-600" size={32} />,
       title: 'Science des Données',
-      description: 'Analyse, production des statistiques et visualisation de données complexes'
+      description: "J’explore, structure et valorise vos données pour en extraire des insights stratégiques et guider des décisions éclairées, premières briques de tout projet data réussi."
+    },
+    {
+      icon: <Brain className="text-purple-600" size={32} />,
+      title: 'Intelligence Artificielle',
+      description: "Je transforme vos données en modèles prédictifs puissants pour anticiper les comportements, automatiser les tâches et détecter les anomalies à fort impact."
+    },
+    {
+      icon: <Sparkles className="text-blue-600" size={32} />,
+      title: 'NLP & LLMs',
+      description: "Je donne du sens à vos données textuelles grâce à des modèles de langage avancés pour extraire l’information, générer du contenu ou construire des agents intelligents."
     },
     {
       icon: <Code className="text-green-600" size={32} />,
       title: 'MLOps & DevOps',
-      description: 'Déploiement et orchestration de pipelines'
+      description: "J’industrialise vos modèles avec des pipelines robustes, du CI/CD et du monitoring, assurant performance, reproductibilité et passage à l’échelle en toute confiance."
+    },
+    {
+      icon: <Server className="text-indigo-600" size={32} />,
+      title: 'Cloud & Architecture',
+      description: "Je vous conçois des architectures cloud modernes, scalables et sécurisées pour automatiser vos flux de données et soutenir vos projets IA et analytiques."
     },
     {
       icon: <BarChart3 className="text-blue-600" size={32} />,
       title: 'BI & DataViz',
-      description: 'Tableaux de bord et visualisations interactives'
+      description: "Je mets en valeur vos données grâce à des tableaux de bord interactifs et intelligents, pour piloter la performance et favoriser des décisions orientées résultats."
     }
+
   ];
 
   return (

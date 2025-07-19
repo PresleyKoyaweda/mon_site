@@ -44,10 +44,13 @@ const Home = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2, duration: 0.8 }}
-                className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900"
+                className="text-2xl sm:text-4xl lg:text-4xl font-bold text-gray-900"
+
               >
                 Salut, je suis{' '}
                 <span className="text-blue-600">Presley Koyaweda</span>
+                
+
               </motion.h1>
               
               <motion.p
@@ -56,7 +59,7 @@ const Home = () => {
                 transition={{ delay: 0.4, duration: 0.8 }}
                 className="text-xl sm:text-2xl text-gray-600 font-medium"
               >
-                Ingénieur en Science des Données et Intelligence Artificielle
+              Expert en science des données et intelligence artificielle
               </motion.p>
               
               <motion.p
@@ -65,8 +68,12 @@ const Home = () => {
                 transition={{ delay: 0.6, duration: 0.8 }}
                 className="text-lg text-gray-700 leading-relaxed"
               >
-                Fort d’une formation en <strong>Data Engineering & Analytics</strong> et d’une base solide en <strong>mathématiques</strong>, <strong>statistique décisionnelle</strong>, <strong>probabilités</strong> et <strong>informatique</strong>, je conçois, déploie et opère des solutions d’<strong>IA</strong> et de <strong>Business Intelligence</strong> à fort impact. 
-  Je m’investis dans l’ensemble du cycle de la <strong>science des données</strong> : de la préparation des données au <strong>machine learning</strong>, en passant par le <strong>NLP</strong>, les <strong>systèmes de recommandation</strong>, le <strong>déploiement de modèles</strong> (<strong>MLOps/LLMOps</strong>) et la <strong>valorisation intelligente</strong> via des outils modernes comme <strong>Power BI</strong>, <strong>MLflow</strong> ou <strong>LangChain</strong>.
+                J’accompagne les entreprises dans la conception, le déploiement et la mise en production de solutions d’<strong>intelligence artificielle</strong> et de <strong>valorisation des données</strong>. 
+                Fort d’une expertise complète en <strong>data engineering</strong>, <strong>machine learning</strong>, <strong>NLP</strong>, <strong>MLOps/LLMOps</strong> et <strong>BI</strong>, 
+                je transforme les données en leviers d’action concrets à l’aide des technologies modernes et des outils les plus adaptés aux enjeux métier.
+
+                Mon approche couvre l’ensemble du cycle de vie des projets data : collecte et préparation des données, modélisation prédictive, industrialisation des modèles et création de tableaux de bord dynamiques. 
+                Mon objectif : concevoir des solutions sur mesure, robustes, évolutives et orientées impact.
               </motion.p>
               
               <motion.div

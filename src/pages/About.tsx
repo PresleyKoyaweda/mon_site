@@ -88,8 +88,15 @@ const About = () => {
                   en veillant à ce qu’elles répondent à des besoins métiers concrets, mesurables et durables. 
                   Mon approche allie excellence technique, compréhension fine des enjeux organisationnels et souci constant de l’impact.
                 </p>
+
+                  <p>
+                  <strong>Mon ambition :</strong> mettre mon expertise au service d'organisations qui veulent exploiter la puissance des données pour innover, anticiper et agir.
+                  </p>
+
+
               </div>
             </div>
+
             
             <motion.div
               whileHover={{ scale: 1.05 }}
